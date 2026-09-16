@@ -3,106 +3,319 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
 <title>June 2027 — Seychelles</title>
 <style>
-:root{--ink:#10221c;--foam:#f4efe4;--palm:#2e5a3c;--card:#fffdf8}
-*{box-sizing:border-box}body{margin:0;font:18px/1.55 Georgia,serif;color:var(--ink);background:var(--foam)}
-.hero{min-height:72vh;display:flex;align-items:flex-end;padding:8vh 8vw 6vh;background:#123 url("https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Intendance_Mahe_Seychelles.jpg?width=1800") center/cover no-repeat;color:#fff;position:relative}
+:root{--ink:#10221c;--foam:#f4efe4;--sand:#e7d7b8;--sea:#1c6b6a;--palm:#2e5a3c;--card:#fffdf8}
+*{box-sizing:border-box}
+body{margin:0;font:18px/1.55 Georgia,Times,"Times New Roman",serif;color:var(--ink);background:var(--foam)}
+img{max-width:100%;height:auto;display:block}
+a{color:#145c5b}
+.hero{min-height:78vh;display:flex;align-items:flex-end;padding:8vh 8vw 6vh;background:#123 url("https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Takamaka-Mah%C3%A9-Seychelles.jpg?width=2000") center/cover no-repeat;color:#fff;position:relative}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,18,.12),rgba(8,20,18,.78))}
-.hero-inner{position:relative;z-index:1;max-width:820px}
-.kicker{letter-spacing:.16em;text-transform:uppercase;font:700 12px system-ui,sans-serif}
-h1{font-size:clamp(2.2rem,6vw,4.2rem);margin:.2em 0;line-height:1.05}
-.wrap{max-width:980px;margin:0 auto;padding:48px 22px 80px}section{margin:0 0 52px}
-h2{font-size:1.7rem;color:var(--palm);margin:0 0 12px}
-.lead{font-size:1.15rem}.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:var(--card);border:1px solid #e3d6bf;border-radius:16px;overflow:hidden}
-.card img{width:100%;height:200px;object-fit:cover;display:block}
-.card .pad{padding:16px 18px 20px}.shot{width:100%;border-radius:16px;margin:14px 0 8px;display:block;max-height:460px;object-fit:cover}
-.pair{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.rules{background:#14352f;color:#f4efe4;border-radius:16px;padding:22px 26px}.rules h2{color:#f0d48a}
-a{color:#145c5b}.price{font-family:system-ui,sans-serif;font-size:.95rem;color:#4a5b52}.note{font-size:.92rem;color:#4a5b52}
-figcaption{font:13px/1.4 system-ui,sans-serif;color:#5a655d;margin:0 0 18px}
-table{width:100%;border-collapse:collapse;font:14px system-ui,sans-serif;background:var(--card);margin:16px 0}
-th,td{border:1px solid #e3d6bf;padding:8px 10px;text-align:left}th{background:#14352f;color:#fff}
+.hero-inner{position:relative;z-index:1;max-width:860px}
+.kicker{letter-spacing:.16em;text-transform:uppercase;font:700 12px/1.2 system-ui,sans-serif}
+h1{font-size:clamp(2.2rem,6vw,4.4rem);margin:.2em 0 .2em;line-height:1.05}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 22px 90px}
+section{margin:0 0 52px}
+h2{font-size:1.75rem;color:var(--palm);margin:0 0 12px}
+h3{margin:8px 0 8px}
+p,li{max-width:72ch}
+.lead{font-size:1.16rem}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.maps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid #e3d6bf;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(16,34,28,.06)}
+.card img{width:100%;height:200px;object-fit:cover;background:#d9cbb0}
+.card .pad{padding:16px 18px 20px}
+.shot{width:100%;border-radius:16px;margin:12px 0 8px;max-height:460px;object-fit:cover}
+.pair{display:grid;gap:14px;grid-template-columns:1fr;margin:14px 0}
+@media(min-width:760px){.pair{grid-template-columns:1fr 1fr}.pair img{height:280px;object-fit:cover;border-radius:16px}}
+.rules{background:#14352f;color:#f4efe4;border-radius:16px;padding:22px 26px}
+.rules h2{color:#f0d48a}
+.price{font-family:system-ui,sans-serif;font-size:.95rem;color:#4a5b52}
+.note{font-size:.92rem;color:#4a5b52}
+.cap{font:13px/1.4 system-ui,sans-serif;color:#5a655d;margin:0 0 18px}
+nav.toc{display:flex;flex-wrap:wrap;gap:10px 16px;margin:0 0 28px;font:14px system-ui,sans-serif}
 footer{border-top:1px solid #ddd2bc;padding-top:18px;color:#5a655d;font-size:.9rem}
-nav{position:sticky;top:0;z-index:5;background:#f4efe4ee;border-bottom:1px solid #ddd2bc;font:13px system-ui,sans-serif;padding:10px 18px;overflow-x:auto;white-space:nowrap}nav a{margin-right:14px;text-decoration:none;color:#145c5b}
-</style></head><body>
-<header class="hero"><div class="hero-inner"><div class="kicker">For the two of us</div>
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="hero-inner">
+<div class="kicker">For the two of us</div>
 <h1>June 2027 — Seychelles</h1>
-<p>30th wedding anniversary & 50th birthdays. One island. No boats. A kitchen. Morning hikes. Afternoon beach.</p></div></header>
-<nav><a href="#where">Where</a><a href="#look">The look</a><a href="#houses">Houses</a><a href="#airbnb">Airbnb</a><a href="#days">Ten days</a><a href="#money">Money</a></nav>
+<p>30th wedding anniversary &amp; 50th birthdays. One island. No boats. A kitchen. Morning hikes. Afternoon beach.</p>
+</div>
+</header>
 <main class="wrap">
-<section><p class="lead">A major celebration week. Exotic like Thailand without feeling seedy. Not a cliché Caribbean package. Not 36 hours to Bora Bora.</p>
-<p>Granite islands in the Indian Ocean. About 6 hours 20 minutes from Tel Aviv. We stay on <strong>Mahé only</strong>. No ferries.</p></section>
-<section id="where"><h2>Where it is</h2>
-<p>Western Indian Ocean, east of Kenya, northeast of Madagascar. One hour ahead of Israel in June.</p>
-<img class="shot" alt="Seychelles on the globe" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seychelles_(orthographic_projection).svg?width=900">
-<figcaption>Seychelles sits east of Africa in the western Indian Ocean.</figcaption>
-<img class="shot" alt="Inner islands map" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seychelles_Inner_Islands.png?width=1200">
-<figcaption>Mahé is the large island. Praslin and La Digue require a boat. We skip them.</figcaption>
-<p>Airport and Victoria on the east. Granite coves south-west. Beau Vallon north-west. June: north and west swim better. Anse Soleil usually stays usable.</p>
-<p><a href="https://ontheworldmap.com/seychelles/seychelles-location-map.html">World locator</a> · <a href="https://ontheworldmap.com/seychelles/island/mahe/">Mahé beach map</a> · <a href="https://gisgeography.com/seychelles-map/">GIS maps</a></p></section>
-<section id="look"><h2>The picture we are buying</h2>
-<div class="pair">
-<figure><img class="shot" alt="Anse Soleil" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_-_panoramio.jpg?width=1400"><figcaption>Anse Soleil — small granite cove, usually swimmable in June.</figcaption></figure>
-<figure><img class="shot" alt="Granite beach" src="https://commons.wikimedia.org/wiki/Special:FilePath/Typically_view_of_Seychelles_beach_(islands_of_Mahe).jpg?width=1400"><figcaption>The granite-and-jungle look that is Mahé.</figcaption></figure></div>
-<div class="pair">
-<figure><img class="shot" alt="Anse Intendance" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Intendance_Mahe_Seychelles.jpg?width=1400"><figcaption>Anse Intendance — postcard south beach. Often too rough to swim in June. Go for pictures.</figcaption></figure>
-<figure><img class="shot" alt="Takamaka" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Takamaka-Mahé-Seychelles.jpg?width=1400"><figcaption>Takamaka / south-west coast — same granite family as Anse Soleil.</figcaption></figure></div>
-<div class="pair">
-<figure><img class="shot" alt="Beau Vallon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Beau_Vallon_beach_asv2024-10.jpg?width=1400"><figcaption>Beau Vallon — easiest June swim. More people. Shop on the road.</figcaption></figure>
-<figure><img class="shot" alt="Aerial Beau Vallon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_of_Beau_Vallon_Mahe,_Seychelles_(38911468714).jpg?width=1400"><figcaption>Beau Vallon from the air. Anse Major hike starts at the north end.</figcaption></figure></div>
-<figure><img class="shot" alt="Port Launay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Launay_beach_asv2024-10_img1.jpg?width=1400"><figcaption>Port Launay marine park — sheltered west coast, better June water.</figcaption></figure></section>
-<section class="rules"><h2>The rules we already set</h2>
-<ul><li>Mahé only. No boats.</li><li>We cook. Oven + stove + full fridge.</li><li>SPAR Eden Island on day one. No Chabad.</li><li>Car from the airport. Drive on the left.</li><li>Hike morning, beach afternoon. Beach close to the house.</li></ul></section>
-<section id="houses"><h2>Four named houses</h2>
-<p>Four Seasons one-bed treehouses are out — no kitchen.</p>
-<div class="grid">
-<article class="card"><img alt="Anse Soleil" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_-_panoramio.jpg?width=1200"><div class="pad">
-<h3>1. Anse Soleil hill</h3>
-<p><strong>Red Palm</strong> — kitchen + private pool. 10–15 min walk.<br><a href="https://www.redpalmseychelles.com/">site</a> · <span class="price">€280–400/night</span></p>
-<p><strong>Maison Soleil</strong> — artist house, also on Airbnb. 10 min walk downhill.<br><a href="https://www.maisonsoleil.info/">site</a> · <a href="https://www.airbnb.com/rooms/11876561">Airbnb</a> · <span class="price">€140–300/night</span></p></div></article>
-<article class="card"><img alt="West coast" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Takamaka-Mahé-Seychelles.jpg?width=1200"><div class="pad">
-<h3>2. Pineapple Beach Villas</h3>
-<p>Kitchen on the sand at Anse Aux Poules Bleues.</p>
-<p><a href="https://www.pineapplebeachvillas.com">site</a> · <span class="price">€250–325/night</span></p></div></article>
-<article class="card"><img alt="Port Launay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Launay_beach_asv2024-10_img1.jpg?width=1200"><div class="pad">
-<h3>3. Villas de Jardin</h3>
-<p>West coast. Port Launay a few minutes by car. Hikes nearby.</p>
-<p><a href="https://www.seyvillas.com/en/162/villas-de-jardin">SeyVillas</a> · <span class="price">€250–335/night</span></p></div></article>
-<article class="card"><img alt="Beau Vallon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Beau_Vallon_beach_asv2024-10.jpg?width=1200"><div class="pad">
-<h3>4. Beau Vallon</h3>
-<p>Best June swim. Anse Major hike starts here.</p>
-<p><a href="https://www.airbnb.com/s/Beau-Vallon--Seychelles/homes">Airbnb</a> · <span class="price">€150–280 simple / €500–700 villa</span></p></div></article>
-</div></section>
-<section id="airbnb"><h2>Airbnb and other kitchens — not hotels</h2>
-<p>Yes. On Mahé the good self-catering places are villas and apartments. Better fit than a resort: oven, fridge, walk to a cove.</p>
-<p>Filter: Entire place · Kitchen · then message: “oven + stovetop + full fridge? walking minutes to a June swim beach?”</p>
-<p>Also: <a href="https://www.seyvillas.com/en/list/mahe">SeyVillas</a> · <a href="https://www.vrbo.com/search?destination=Mahe%20Island">VRBO</a> · Booking apartments.</p>
-<h3>South-west — Anse Soleil / Anse à la Mouche</h3>
+<nav class="toc">
+<a href="#where">Maps</a>
+<a href="#look">The look</a>
+<a href="#houses">Houses</a>
+<a href="#airbnb">Airbnb &amp; homes</a>
+<a href="#days">10 days</a>
+<a href="#hikes">Hikes</a>
+</nav>
+
+<section>
+<p class="lead">A major celebration week, not a checklist holiday. Exotic like Thailand without feeling seedy. Not a cliché Caribbean package. Not 36 hours to Bora Bora.</p>
+<p>Seychelles is granite islands in the Indian Ocean: jungle meeting white sand, water that looks unreal, short mountain walks that end at a beach. About 6 hours 20 minutes from Tel Aviv. We stay on <strong>Mahé only</strong>. No ferries. No island-hopping.</p>
+</section>
+
+<section id="where">
+<h2>Where it is</h2>
+<p>Western Indian Ocean, about 1,600 km east of Kenya, northeast of Madagascar. Not the Caribbean. Not the Pacific.</p>
+<div class="maps">
+<figure>
+<img class="shot" alt="Seychelles on the globe, east of Africa" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seychelles_on_the_globe_(Africa_centered).svg?width=1200">
+<figcaption class="cap">Seychelles on the globe — east of Kenya / Tanzania. Wikimedia Commons.</figcaption>
+</figure>
+<figure>
+<img class="shot" alt="Mahé among the inner Seychelles islands" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mahe_in_Seychelles_(inner_islands).svg?width=1200">
+<figcaption class="cap">Mahé is the big island. Airport and Victoria sit on the east. We never leave this island.</figcaption>
+</figure>
+<figure>
+<img class="shot" alt="Mahé administrative map" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seychelles_Mah%C3%A9_adm_location_map.svg?width=1200">
+<figcaption class="cap">Mahé itself: north = Beau Vallon, west = Port Glaud / Port Launay, southwest = Anse Soleil / Baie Lazare.</figcaption>
+</figure>
+</div>
+<p>Also keep these open:</p>
 <ul>
-<li><a href="https://www.airbnb.com/s/Anse-Soleil--Seychelles/homes">Airbnb Anse Soleil</a></li>
-<li><a href="https://www.airbnb.com/s/Anse-%C3%A0-la-Mouche--Seychelles/homes">Airbnb Anse à la Mouche</a></li>
-<li><a href="https://www.airbnb.com/rooms/11876561">Maison Soleil / Citronelle</a> — 10 min walk to Anse Soleil</li>
-<li><a href="https://www.airbnb.com/rooms/712716051471710678">Anse Soleil Resort 1-bedroom</a> — kitchen, shop next door, short drive or walk to the cove</li>
-<li><a href="https://www.airbnb.com/rooms/1367901720250412177">Solea self-catering</a> — kitchen, Anse Soleil area</li>
-<li><a href="https://www.airbnb.com/rooms/1446363365951657643">Anse à la Mouche Sunset View</a> — kitchen, ~50 m to a calm bay</li>
+<li><a href="https://ontheworldmap.com/seychelles/seychelles-location-map.html">World locator</a></li>
+<li><a href="https://ontheworldmap.com/seychelles/island/mahe/">Mahé island map with beaches</a></li>
+<li><a href="https://gisgeography.com/seychelles-map/">Inner islands map</a></li>
+<li><a href="https://www.openstreetmap.org/#map=12/-4.68/55.48">OpenStreetMap Mahé</a></li>
 </ul>
+<p class="note">In June the southeast trade winds make south-facing wild beaches choppier. North and west swim more reliably. Anse Soleil is a small west-facing cove that usually stays usable.</p>
+</section>
+
+<section id="look">
+<h2>What it actually looks like</h2>
+<img class="shot" alt="Anse Intendance granite and turquoise water" src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_of_Anse_Intendance_beach_Mahe_Seychelles_(24751382967).jpg?width=1600">
+<p class="cap">Anse Intendance from the air — the granite-and-palm postcard. Swim here in June only if that cove is calm.</p>
+<div class="pair">
+<img alt="Anse Soleil cove" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_-_panoramio.jpg?width=1400">
+<img alt="Anse Soleil Mahé" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_Mahe_Seychelles.jpg?width=1400">
+</div>
+<p class="cap">Anse Soleil — the small west cove we keep coming back to. Usually the safer swim near the south-west houses.</p>
+<div class="pair">
+<img alt="Port Launay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Launay,_Mahe,_Seychelles.jpg?width=1400">
+<img alt="Beau Vallon beach" src="https://commons.wikimedia.org/wiki/Special:FilePath/Beau_Vallon_beach_asv2024-10.jpg?width=1400">
+</div>
+<p class="cap">Left: Port Launay (calmer west water in the trades). Right: Beau Vallon (the reliable June swim, easier groceries).</p>
+<div class="pair">
+<img alt="Baie Lazare beach" src="https://commons.wikimedia.org/wiki/Special:FilePath/Baie_Lazare_Beach_Mahe_Seychelles.jpg?width=1400">
+<img alt="Anse Royale aerial" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Royale_aerial_view_asv2024-10_img2.jpg?width=1400">
+</div>
+<p class="cap">Baie Lazare and the south coast from the air. Picture days. Confirm swim on the day.</p>
+<img class="shot" alt="View from Mission Lodge" src="https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Mission_Lodge_Lookout,_Mah%C3%A9,_Seychelles.jpg?width=1600">
+<p class="cap">Mission Lodge lookout — west-coast mountains dropping to the sea. Easy stop, almost no walk.</p>
+</section>
+
+<section class="rules">
+<h2>The rules we already set</h2>
+<ul>
+<li>Mahé only. No Praslin, no La Digue, no sunset catamaran.</li>
+<li>We cook. Need oven + stovetop + full fridge. Four Seasons one-bedroom treehouses are out — minibar only.</li>
+<li>Small supermarkets exist. Best shop: SPAR Eden Island near Victoria.</li>
+<li>No Chabad House on the islands. Pack staples from home.</li>
+<li>Car: yes. Drive on the left. Compact automatic from the airport.</li>
+<li>Rhythm: easy hike in the morning, beach and sun after.</li>
+<li>Beaches close to the house — walk or a few minutes, not a 40-minute hunt every afternoon.</li>
+</ul>
+</section>
+
+<section>
+<h2>Seaplanes / private pilot</h2>
+<p>There are no Maldives-style seaplanes. Air Seychelles flies a 15-minute Twin Otter Mahé–Praslin (runway, not water). Zil Air helicopters cost ~€900+ per aircraft. We do not need either if we stay on Mahé. Optional treat later: a 20-minute scenic helicopter over Mahé so we see the other islands from the air and land back on the same island.</p>
+<p><a href="https://zilair.com/">Zil Air</a> · <a href="https://www.airseychelles.com/en/domestic-services">Air Seychelles domestic</a></p>
+</section>
+
+<section>
+<h2>Food</h2>
+<p>Plan: one big shop on arrival, cook simple food, restock once. Budget ~€200–400 for 10 days.</p>
+<ul>
+<li>SPAR Eden Island (best imports)</li>
+<li>STC Hypermarket, Victoria</li>
+<li>ISPC Fresh Beau Vallon and ISPC Fresh Anse Royale</li>
+<li>Victoria market: fruit, vegetables, whole scaled fish</li>
+</ul>
+</section>
+
+<section id="houses">
+<h2>The four houses</h2>
+<p>These are the shortlist. All are villas / self-catering, not a hotel buffet. Confirm oven + stovetop + full fridge in the booking email before paying.</p>
+<div class="grid">
+<article class="card">
+<img alt="Anse Soleil" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_-_panoramio.jpg?width=1200">
+<div class="pad">
+<h3>1. Anse Soleil hill</h3>
+<p>The granite-and-palm coast. Kitchen at the villa. Beach is a walk.</p>
+<p><strong>Red Palm Luxury Villas</strong><br>
+<a href="https://www.redpalmseychelles.com/">redpalmseychelles.com</a><br>
+<a href="https://www.booking.com/hotel/sc/red-palm-villas-seychelles.html">Booking.com</a></p>
+<p>Couple villa, oven+stove+fridge, private saltwater pool. 10–15 min walk to Anse Soleil and Petite Anse.</p>
+<p class="price">~€280–400/night. 10 nights: €2,800–4,000.</p>
+<p><strong>Maison Soleil</strong><br>
+<a href="https://www.maisonsoleil.info/">maisonsoleil.info</a><br>
+<a href="https://www.seyvillas.com/en/286/appartement-maison-soleil">SeyVillas</a><br>
+Also on Airbnb as Jasmine Superior Suite @ Maison Soleil.</p>
+<p>Artist’s house, suites with kitchen. 10 min walk downhill to Anse Soleil. No private pool.</p>
+<p class="price">~€140–300/night. 10 nights: €1,400–3,000.</p>
+<p class="note">Plus: the postcard coast. Minus: Petite Anse can be choppy in June; pool or Anse Soleil cove is the backup.</p>
+</div>
+</article>
+<article class="card">
+<img alt="West Mahé coast" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Takamaka-Mah%C3%A9-Seychelles.jpg?width=1200">
+<div class="pad">
+<h3>2. On the sand — Pineapple Beach Villas</h3>
+<p><a href="https://www.pineapplebeachvillas.com">pineapplebeachvillas.com</a><br>
+<a href="https://www.seyvillas.com/en/435/appartement-pineapple-beach-villas">SeyVillas</a></p>
+<p>One-bedroom, stove+oven+fridge, step onto Anse Aux Poules Bleues. Anse Soleil a short drive.</p>
+<p class="price">~€250–325/night. 10 nights: €2,500–3,250.</p>
+<p class="note">Plus: cook breakfast, walk onto sand. Minus: home beach is smaller than Anse Soleil; still the June-swell side of the island.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Port Launay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Launay_beach_asv2024-10_img1.jpg?width=1200">
+<div class="pad">
+<h3>3. West — Villas de Jardin, Port Glaud</h3>
+<p><a href="https://www.seyvillas.com/en/162/villas-de-jardin">SeyVillas</a><br>
+<a href="https://www.booking.com/hotel/sc/villas-de-jardin.html">Booking.com</a><br>
+Also listed on Airbnb as the Port Glaud hillside villas.</p>
+<p>One-bedroom, kitchen, terrace, shared infinity pool. Port Launay a few minutes by car. Close to Copolia and Morne Blanc.</p>
+<p class="price">~€250–335/night. 10 nights: €2,500–3,350.</p>
+<p class="note">Confirm oven (not only burners) before paying. Plus: better June water, better hike access. Minus: not the granite amphitheater photo.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Beau Vallon beach" src="https://commons.wikimedia.org/wiki/Special:FilePath/Beau_Vallon_beach_asv2024-10.jpg?width=1200">
+<div class="pad">
+<h3>4. North — Beau Vallon kitchen villa</h3>
+<p>Best June swimming. ISPC supermarket on the beach road. Anse Major hike starts here.</p>
+<p class="price">Simple apartment/chalet: €150–280/night (10 nights €1,500–2,800)<br>Proper beachfront villa with pool: €500–700/night (10 nights €5,000–7,000)</p>
+<p><a href="https://www.airbnb.com/s/Beau-Vallon--Seychelles/homes">Airbnb Beau Vallon</a><br>
+<a href="https://www.seyvillas.com/en/list/mahe_villa-type">SeyVillas Mahé villas</a></p>
+<p class="note">Plus: easiest swimming, easiest groceries. Minus: town beach, not a hidden cove.</p>
+</div>
+</article>
+</div>
+</section>
+
+<section id="airbnb">
+<h2>Airbnb and other homes — not hotels</h2>
+<p>Yes. On Mahé the magical spots are mostly private villas and self-catering houses, not resorts. Airbnb exists. The local specialist <a href="https://www.seyvillas.com/en/list/mahe_villa-type">SeyVillas</a> is often cleaner to book. Booking.com “homes / villas” and VRBO show many of the same doors.</p>
+<p>Filter every listing for: <strong>entire place</strong>, <strong>kitchen with oven + stovetop + full fridge</strong> (not a kitchenette / minibar), 1 bedroom is enough, walk-to-beach or under 10 minutes by car.</p>
+
+<h3>Search these three clusters</h3>
+<ul>
+<li><a href="https://www.airbnb.com/s/Anse-Soleil--Seychelles/homes">Airbnb — Anse Soleil</a> · <a href="https://www.airbnb.com/s/Baie-Lazare--Seychelles/homes">Baie Lazare</a></li>
+<li><a href="https://www.airbnb.com/s/Port-Glaud--Seychelles/homes">Airbnb — Port Glaud</a></li>
+<li><a href="https://www.airbnb.com/s/Beau-Vallon--Seychelles/homes">Airbnb — Beau Vallon</a></li>
+<li><a href="https://www.booking.com/holiday-homes/city/sc/mahe-sc.html">Booking.com holiday homes on Mahé</a></li>
+<li><a href="https://www.booking.com/villas/city/sc/baie-lazare-mahe.html">Booking.com villas in Baie Lazare</a></li>
+</ul>
+
+<div class="grid">
+<article class="card">
+<img alt="Anse Soleil" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_Mahe_Seychelles.jpg?width=1200">
+<div class="pad">
+<h3>Southwest — Anse Soleil / Baie Lazare</h3>
+<p>This is the “magical spot” coast. Best pictures. Confirm June swim; Anse Soleil cove is the backup.</p>
+<ul>
+<li><strong>Solea Self Catering</strong>, Anse Soleil — kitchen, beach access. <a href="https://www.airbnb.com/rooms/1367901720250412177">Airbnb</a></li>
+<li><strong>Anse Soleil Resort</strong> self-catering houses — oven + stovetop + fridge in the one-bedroom homes; 3 min drive to Soleil beach. <a href="https://www.booking.com/hotel/sc/anse-soleil-resort.html">Booking</a></li>
+<li><strong>Anse Soleil Beachcomber</strong> — on the sand; some chalets have kitchenette with oven. Ask before booking. <a href="https://www.booking.com/hotel/sc/anse-soleil-beachcomber-self-catering-chalets.html">Booking</a></li>
+<li><strong>La Rocaille</strong> — Creole self-catering house, ~5 min walk to Baie Lazare beach. <a href="https://www.booking.com/villas/city/sc/baie-lazare-mahe.html">via Booking villas</a></li>
+<li><strong>Ogumka 2 Self Catering Santa Maria</strong>, Baie Lazare. <a href="https://www.seyvillas.com/en/530/villa-ogumka-2-self-catering-santa-maria">SeyVillas</a></li>
+</ul>
+</div>
+</article>
+<article class="card">
+<img alt="Port Launay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Launay_beach_asv2024-10_img1.jpg?width=1200">
+<div class="pad">
 <h3>West — Port Glaud</h3>
-<p><a href="https://www.airbnb.com/s/Port-Glaud--Seychelles/homes">Airbnb Port Glaud</a></p>
-<h3>North — Beau Vallon</h3>
-<p><a href="https://www.airbnb.com/s/Beau-Vallon--Seychelles/homes">Airbnb Beau Vallon kitchen</a> — simple apartments one street back, or beachfront villa with pool.</p>
-<p class="note">Red Palm books as a villa on Booking more often than Airbnb. Same idea: private kitchen + pool, walk to Anse Soleil.</p></section>
-<section><h2>Food</h2><p>SPAR Eden Island on arrival. STC Victoria. ISPC Beau Vallon / Anse Royale. About €200–400 for 10 days.</p></section>
-<section id="days"><h2>Sample 10 days</h2>
-<ol><li>Land, SPAR, house, early night.</li><li>Recover on the nearest beach.</li><li>Anse Major hike to a hidden beach. No boat.</li><li>Copolia viewpoint, beach after.</li><li>Morne Blanc sunrise, then swim.</li><li>Restock. Villa day.</li><li>Anse Intendance for pictures. Swim only if calm.</li><li>Victoria market + a viewpoint + beach.</li><li>Repeat the favourite morning.</li><li>Buffer. Fly.</li></ol></section>
-<section id="money"><h2>Money</h2>
-<table><tr><th></th><th>Low</th><th>Comfortable</th></tr>
-<tr><td>House / Airbnb</td><td>€1,400</td><td>€4,000</td></tr>
-<tr><td>Car</td><td>€500</td><td>€800</td></tr>
-<tr><td>Food</td><td>€200</td><td>€400</td></tr>
-<tr><td>Flights for two</td><td>~$1,600</td><td>~$3,000</td></tr>
-<tr><td>Trip for two</td><td colspan="2">about $5,000–10,000</td></tr></table></section>
-<footer><p>Private trip concept. No password.</p></footer>
-</main></body></html>
+<p>Better June water at Port Launay. Closer to the mountain hikes.</p>
+<ul>
+<li><strong>Villas de Jardin</strong> — also on Airbnb as a 2BR tropical retreat / Maison de Jardin. Kitchen. Shared pool.</li>
+<li><strong>Gigi’s Self-Catering Apt</strong>, Port Glaud — 2 bedroom, kitchen, long Airbnb history. <a href="https://www.airbnb.com/s/Port-Glaud--Seychelles/homes">search Port Glaud</a></li>
+<li><strong>Island of Love</strong> / hillside self-catering, Port Glaud — check Booking holiday homes.</li>
+</ul>
+<p class="note">Ask: oven, not only a two-burner hob. Port Launay beach is a few minutes by car, not always a walk.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Beau Vallon" src="https://commons.wikimedia.org/wiki/Special:FilePath/Beau_Vallon_beach_asv2024-10.jpg?width=1200">
+<div class="pad">
+<h3>North — Beau Vallon / Bel Ombre</h3>
+<p>Town beach, but the water works in June. ISPC is on the beach road. Anse Major trail starts at Bel Ombre.</p>
+<ul>
+<li><strong>Chez Nella</strong> — house a few minutes from Beau Vallon, stove + fridge (confirm oven). On Airbnb.</li>
+<li><strong>Mouggae Blues Villas</strong> — ~100 m from Beau Vallon beach. <a href="https://www.seyvillas.com/en/534/mouggae-blues-villas">SeyVillas</a></li>
+<li><strong>Villa Jasmin</strong>, Bel Ombre — near the Anse Major trailhead. <a href="https://www.seyvillas.com/en/503/villa-jasmin">SeyVillas</a></li>
+<li>Search Airbnb for “entire place + kitchen + Beau Vallon” and ignore anything that only lists a microwave.</li>
+</ul>
+</div>
+</article>
+</div>
+<p class="note">Four Seasons Residences at Petite Anse (not the standard treehouse rooms) are the rare resort option with a full kitchen. Beautiful and expensive. Only worth it if the Residence calendar is open and the price is not silly for 10 nights.</p>
+</section>
+
+<section id="hikes">
+<h2>The morning walks</h2>
+<p>Low-key. Start early. Beach after.</p>
+<div class="pair">
+<img alt="Overlook of Anse Major from the trail" src="https://commons.wikimedia.org/wiki/Special:FilePath/Overlook_of_Anse_Major_from_the_trail.jpg?width=1400">
+<img alt="Anse Major viewpoint" src="https://commons.wikimedia.org/wiki/Special:FilePath/View_point_Anse_Major_Mahe_(27842343749).jpg?width=1400">
+</div>
+<p class="cap">Anse Major — a coastal trail from Bel Ombre that ends at a hidden beach. No boat. Picnic, swim, walk back.</p>
+<div class="pair">
+<img alt="Anse Major beach" src="https://commons.wikimedia.org/wiki/Special:FilePath/Strand_Anse_Major_Mahe_Seychellen_(38723220725).jpg?width=1400">
+<img alt="Copolia trail" src="https://commons.wikimedia.org/wiki/Special:FilePath/Copolia_Trail_Mahe_Seychelles.jpg?width=1400">
+</div>
+<p class="cap">Left: Anse Major beach itself. Right: Copolia trail — granite viewpoint above Victoria, about two hours return.</p>
+<img class="shot" alt="Mahé west-coast panorama" src="https://commons.wikimedia.org/wiki/Special:FilePath/PANORAMA_from_MAHE_ISLAND_by_J._Strzelecki.JPG?width=1800">
+<p class="cap">West-coast panorama from the La Misère ridge. This is the mountain spine the hikes sit on.</p>
+</section>
+
+<section id="days">
+<h2>Sample 10 days</h2>
+<p>Works from any of the houses.</p>
+<img class="shot" alt="Anse Intendance facing north" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Intendance_Facing_North.jpg?width=1600">
+<ol>
+<li>Land SEZ, SPAR Eden Island shop, drive to the house, swim or pool, early night.</li>
+<li>Recover on the nearest beach. Learn the coastal road only.</li>
+<li>Anse Major hike (starts near Bel Ombre): walk to a hidden beach, picnic, swim, walk back. No boat.</li>
+<li>Copolia morning (granite viewpoint), beach after.</li>
+<li>Morne Blanc early, then Port Launay or Beau Vallon if home beach is sloppy.</li>
+<li>Restock + villa day.</li>
+<li>Anse Intendance / Baie Lazare for pictures. Swim only if that cove is calm.</li>
+<li>Victoria market + Mission Lodge or Jardin du Roi + beach.</li>
+<li>Repeat the favorite hike and a long swim.</li>
+<li>No hike. Airport 30–45 minutes. Slack.</li>
+</ol>
+<p class="note">Leave Israel after Shabbat 12 June 2027, or before Thursday 10 June (Shavuot is Fri 11 June 2027).</p>
+</section>
+
+<section>
+<h2>Money picture (10 nights, two people)</h2>
+<ul>
+<li>House: €1,400–4,000 for the couple-sized options (or €5,000–7,000 for a fancy Beau Vallon villa)</li>
+<li>Car: €500–800</li>
+<li>Food: €200–400</li>
+<li>Flights TLV–SEZ: often ~$800–1,500 per person depending on routing</li>
+</ul>
+<p>Total ballpark excluding flights: about €2,200–5,200 for the house+car+food we actually want.</p>
+</section>
+
+<section>
+<h2>What we still decide</h2>
+<p>Which door: Red Palm, Maison Soleil, Pineapple Beach, a Port Glaud kitchen villa, a Beau Vallon kitchen house, or an Airbnb on the Anse Soleil hill.</p>
+<p>Once we pick the door, the next document is drive times from that house, the SPAR shopping list, and the booking email.</p>
+</section>
+
+<footer>
+<p>Private trip concept. No password. Photos and maps: Wikimedia Commons. Hotel and villa links go to official or listing pages. Prices are planning ranges, not quotes. Do not put passport numbers here.</p>
+</footer>
+</main>
+</body>
+</html>
