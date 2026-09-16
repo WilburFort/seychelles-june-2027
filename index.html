@@ -3,57 +3,178 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
-<title>Seychelles · June 2027 · Just the two of us</title>
+<title>June 2027 — Seychelles</title>
 <style>
-:root{--ink:#1c1916;--muted:#5c564e;--sand:#f4efe6;--paper:#fffdf8;--teal:#0e4a56;--teal-deep:#0a3340;--coral:#b85a45;--line:#e4dccf}
-*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:var(--ink);background:var(--sand);line-height:1.55;font-size:18px}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
-.hero{background:var(--teal-deep);color:#f7f1e6;padding:48px 20px;text-align:center}
-.hero .kicker{letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-family:system-ui,sans-serif;opacity:.8}
-h1{font-weight:500;font-size:clamp(28px,6vw,44px);margin:10px 0 8px}
-h2{font-size:26px;color:var(--teal-deep);margin:40px 0 12px;border-bottom:1px solid var(--line);padding-bottom:8px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
-img{width:100%;border-radius:10px;display:block}
-figcaption{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin:8px 0 18px}
-a{color:var(--coral)}table{width:100%;border-collapse:collapse;font-family:system-ui,sans-serif;font-size:14px;background:var(--paper);margin:16px 0}
-th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}th{background:var(--teal);color:#fff}
-nav{position:sticky;top:0;background:#fffdf8ee;border-bottom:1px solid var(--line);font-family:system-ui,sans-serif;font-size:13px;padding:10px 20px;overflow-x:auto;white-space:nowrap}
-nav a{margin-right:14px;text-decoration:none;color:var(--teal)}
-</style></head><body>
-<div class="hero"><div class="kicker">A trip concept for the two of us</div>
-<h1>Seychelles, June 2027</h1>
-<p>Fifty. Thirty years married. One island. No boats. A kitchen. Hills in the morning, water in the afternoon.</p></div>
-<nav><a href="#idea">The idea</a><a href="#houses">Houses</a><a href="#days">Ten days</a><a href="#money">Money</a></nav>
-<div class="wrap">
-<h2 id="idea">The idea</h2>
-<p>Mahé only. About 10 nights after Shavuot (leave after 12 June 2027, or before 10 June). A house with oven, stove and a full fridge. Beach close enough to walk. No ferries, no second hotel.</p>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Seychelles_%28orthographic_projection%29.svg/800px-Seychelles_%28orthographic_projection%29.svg.png" alt="Seychelles on the globe"><figcaption>Western Indian Ocean, about 6 hours 20 minutes from Tel Aviv.</figcaption></figure>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Seychelles_Inner_Islands.png/960px-Seychelles_Inner_Islands.png" alt="Inner islands map"><figcaption>Mahé is the big island. Praslin and La Digue require a boat — we skip them.</figcaption></figure>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Anse_Soleil_-_panoramio.jpg/1280px-Anse_Soleil_-_panoramio.jpg" alt="Anse Soleil"><figcaption>Anse Soleil — the granite cove we kept coming back to.</figcaption></figure>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Beau_Vallon_beach_asv2024-10.jpg" alt="Beau Vallon"><figcaption>Beau Vallon — easiest June swimming, more people.</figcaption></figure>
-<div class="card"><ul>
-<li>Mahé only. No boats. No seaplanes needed.</li>
-<li>We cook. No Chabad, no kosher restaurant. SPAR Eden Island on day one.</li>
-<li>Real kitchen: oven, stove, full fridge.</li>
-<li>Car from the airport. Drive on the left.</li>
-<li>Four Seasons one-bedroom treehouses are out — no kitchen.</li>
-</ul></div>
-<h2 id="houses">Four houses</h2>
-<div class="card">
-<p><strong>1. Anse Soleil hill — Red Palm or Maison Soleil</strong><br>Walk 10 minutes to the pretty cove. Red Palm has a private pool.<br>Red Palm 10 nights €2,800–4,000 · <a href="https://www.redpalmseychelles.com/">site</a><br>Maison Soleil 10 nights €1,400–3,000 · <a href="https://www.maisonsoleil.info/">site</a></p>
-<p><strong>2. On the sand — Pineapple Beach Villas</strong><br>Kitchen and beach at the door. 10 nights €2,500–3,250 · <a href="https://www.pineapplebeachvillas.com">site</a></p>
-<p><strong>3. West — Villas de Jardin, Port Glaud</strong><br>Calmer June water, hikes nearby. 10 nights €2,500–3,350 · <a href="https://www.seyvillas.com/en/162/villas-de-jardin">SeyVillas</a></p>
-<p><strong>4. North — Beau Vallon kitchen villa</strong><br>Best swim, Anse Major trail starts here. Simple 10 nights €1,500–2,800. Beachfront villa €5,000–7,000 · <a href="https://www.airbnb.com/s/Beau-Vallon--Seychelles/homes">Airbnb</a></p>
+:root{--ink:#10221c;--foam:#f4efe4;--sand:#e7d7b8;--sea:#1c6b6a;--palm:#2e5a3c;--card:#fffdf8}
+*{box-sizing:border-box}
+body{margin:0;font:18px/1.55 Georgia,Times,"Times New Roman",serif;color:var(--ink);background:var(--foam)}
+.hero{min-height:70vh;display:flex;align-items:flex-end;padding:8vh 8vw 6vh;background:#123 url("https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Takamaka-Mah%C3%A9-Seychelles.jpg?width=1600") center/cover no-repeat;color:#fff;position:relative}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,18,.15),rgba(8,20,18,.72))}
+.hero-inner{position:relative;z-index:1;max-width:820px}
+.kicker{letter-spacing:.16em;text-transform:uppercase;font:700 12px/1.2 system-ui,sans-serif}
+h1{font-size:clamp(2.2rem,6vw,4.2rem);margin:.2em 0 .2em;line-height:1.05}
+.wrap{max-width:980px;margin:0 auto;padding:48px 22px 80px}
+section{margin:0 0 48px}
+h2{font-size:1.7rem;color:var(--palm);margin:0 0 12px}
+h3{margin:22px 0 8px}
+p,li{max-width:70ch}
+.lead{font-size:1.15rem}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid #e3d6bf;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(16,34,28,.06)}
+.card img{width:100%;height:190px;object-fit:cover;display:block;background:#d9cbb0}
+.card .pad{padding:16px 18px 20px}
+.shot{width:100%;border-radius:16px;margin:12px 0 8px;display:block;max-height:420px;object-fit:cover}
+.rules{background:#14352f;color:#f4efe4;border-radius:16px;padding:22px 26px}
+.rules h2{color:#f0d48a}
+a{color:#145c5b}
+.price{font-family:system-ui,sans-serif;font-size:.95rem;color:#4a5b52}
+.note{font-size:.92rem;color:#4a5b52}
+footer{border-top:1px solid #ddd2bc;padding-top:18px;color:#5a655d;font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="hero-inner">
+<div class="kicker">For the two of us</div>
+<h1>June 2027 — Seychelles</h1>
+<p>30th wedding anniversary &amp; 50th birthdays. One island. No boats. A kitchen. Morning hikes. Afternoon beach.</p>
 </div>
-<h2 id="days">Ten days</h2>
-<ol><li>Land. SPAR shop. House. Early night.</li><li>Recover on the sand.</li><li>Anse Major hike to a hidden beach. No boat.</li><li>Copolia granite viewpoint. Swim after.</li><li>Morne Blanc at sunrise. Swim after.</li><li>Restock. Do nothing.</li><li>Anse Intendance for pictures. Swim only if calm.</li><li>Victoria market. A viewpoint. Beach.</li><li>Repeat the favourite morning.</li><li>Buffer. Fly.</li></ol>
-<h2 id="money">Money</h2>
-<table><tr><th></th><th>Low</th><th>Comfortable</th></tr>
-<tr><td>House, 10 nights</td><td>€1,500</td><td>€4,000</td></tr>
-<tr><td>Car</td><td>€500</td><td>€800</td></tr>
-<tr><td>SPAR food</td><td>€200</td><td>€400</td></tr>
-<tr><td>Flights for two</td><td>~$1,600</td><td>~$3,000</td></tr>
-<tr><td>Trip for two</td><td colspan="2">about $5,000–10,000</td></tr></table>
-<p>What we still choose: which house. Then flights, then the car.</p>
-</div></body></html>
+</header>
+<main class="wrap">
+<section>
+<p class="lead">A major celebration week, not a checklist holiday. Exotic like Thailand without feeling seedy. Not a cliché Caribbean package. Not 36 hours to Bora Bora.</p>
+<p>Seychelles is granite islands in the Indian Ocean: jungle meeting white sand, water that looks unreal, short mountain walks that end at a beach. About 6 hours 20 minutes from Tel Aviv. We stay on <strong>Mahé only</strong>. No ferries. No island-hopping.</p>
+</section>
+<section>
+<h2>Where it is</h2>
+<p>Western Indian Ocean, about 1,600 km east of Kenya, northeast of Madagascar. Not the Caribbean. Not the Pacific.</p>
+<img class="shot" alt="Anse Intendance, Mahé" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Intendance_Mahe_Seychelles.jpg?width=1400">
+<p class="note">Mahé is the main island (~27 km long). Airport (SEZ) and Victoria are on the east/northeast. Mountains down the middle. Beaches all around. In June the southeast trade winds make south-facing wild beaches choppier. North and west swim more reliably. Anse Soleil is a small west-facing cove that usually stays usable.</p>
+<ul>
+<li><a href="https://ontheworldmap.com/seychelles/seychelles-location-map.html">World locator map</a></li>
+<li><a href="https://ontheworldmap.com/seychelles/island/mahe/">Mahé island map</a></li>
+<li><a href="https://gisgeography.com/seychelles-map/">Inner islands map</a></li>
+</ul>
+</section>
+<section class="rules">
+<h2>The rules we already set</h2>
+<ul>
+<li>Mahé only. No Praslin, no La Digue, no sunset catamaran.</li>
+<li>We cook. Need oven + stovetop + full fridge.</li>
+<li>Small supermarkets exist. Best shop: SPAR Eden Island near Victoria.</li>
+<li>No Chabad House on the islands. Pack staples from home.</li>
+<li>Car: yes. Drive on the left. Compact automatic from the airport.</li>
+<li>Rhythm: easy hike in the morning, beach and sun after.</li>
+<li>Beaches close to the house — walk or a few minutes, not a 40-minute hunt every afternoon.</li>
+</ul>
+</section>
+<section>
+<h2>Seaplanes / private pilot</h2>
+<p>There are no Maldives-style seaplanes. Air Seychelles flies a 15-minute Twin Otter Mahé–Praslin (runway, not water). Zil Air helicopters cost ~€900+ per aircraft. We do not need either if we stay on Mahé. Optional treat later: a 20-minute scenic helicopter over Mahé so we see the other islands from the air and land back on the same island.</p>
+<p><a href="https://zilair.com/">Zil Air</a> · <a href="https://www.airseychelles.com/en/domestic-services">Air Seychelles domestic</a></p>
+</section>
+<section>
+<h2>Food</h2>
+<p>Plan: one big shop on arrival, cook simple food, restock once. Budget ~€200–400 for 10 days.</p>
+<ul>
+<li>SPAR Eden Island (best imports)</li>
+<li>STC Hypermarket, Victoria</li>
+<li>ISPC Fresh Beau Vallon and ISPC Fresh Anse Royale</li>
+<li>Victoria market: fruit, vegetables, whole scaled fish</li>
+</ul>
+</section>
+<section>
+<h2>The four houses</h2>
+<p>Four Seasons one-bedroom treehouses are out — no real kitchen.</p>
+<div class="grid">
+<article class="card">
+<img alt="Anse Soleil" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Soleil_-_panoramio.jpg?width=1200">
+<div class="pad">
+<h3>1. Anse Soleil hill</h3>
+<p>The granite-and-palm coast. Kitchen at the villa. Beach is a walk.</p>
+<p><strong>Red Palm Luxury Villas</strong><br>
+<a href="https://www.redpalmseychelles.com/">redpalmseychelles.com</a><br>
+<a href="https://www.booking.com/hotel/sc/red-palm-villas-seychelles.html">Booking.com</a></p>
+<p>Couple villa, oven+stove+fridge, private saltwater pool. 10–15 min walk to Anse Soleil and Petite Anse.</p>
+<p class="price">~€280–400/night. 10 nights: €2,800–4,000.</p>
+<p><strong>Maison Soleil</strong><br>
+<a href="https://www.maisonsoleil.info/">maisonsoleil.info</a><br>
+<a href="https://www.seyvillas.com/en/286/appartement-maison-soleil">SeyVillas</a></p>
+<p>Artist’s house, suites with kitchen. 10 min walk downhill to Anse Soleil. No private pool.</p>
+<p class="price">~€140–300/night. 10 nights: €1,400–3,000.</p>
+<p class="note">Plus: the postcard coast. Minus: Petite Anse can be choppy in June; pool or Anse Soleil cove is the backup.</p>
+</div>
+</article>
+<article class="card">
+<img alt="West Mahé coast" src="https://commons.wikimedia.org/wiki/Special:FilePath/Anse_Takamaka-Mah%C3%A9-Seychelles.jpg?width=1200">
+<div class="pad">
+<h3>2. On the sand — Pineapple Beach Villas</h3>
+<p><a href="https://www.pineapplebeachvillas.com">pineapplebeachvillas.com</a><br>
+<a href="https://www.seyvillas.com/en/435/appartement-pineapple-beach-villas">SeyVillas</a></p>
+<p>One-bedroom, stove+oven+fridge, step onto Anse Aux Poules Bleues. Anse Soleil a short drive.</p>
+<p class="price">~€250–325/night. 10 nights: €2,500–3,250.</p>
+<p class="note">Plus: cook breakfast, walk onto sand. Minus: home beach is smaller than Anse Soleil; still the June-swell side of the island.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Port Launay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Launay_beach_asv2024-10_img1.jpg?width=1200">
+<div class="pad">
+<h3>3. West — Villas de Jardin, Port Glaud</h3>
+<p><a href="https://www.seyvillas.com/en/162/villas-de-jardin">SeyVillas</a><br>
+<a href="https://www.booking.com/hotel/sc/villas-de-jardin.html">Booking.com</a></p>
+<p>One-bedroom, kitchen, terrace, shared infinity pool. Port Launay (calmer June swim) a few minutes by car. Close to Copolia and Morne Blanc hikes.</p>
+<p class="price">~€250–335/night. 10 nights: €2,500–3,350.</p>
+<p class="note">Confirm oven (not only burners) before paying. Plus: better June water, better hike access. Minus: not the granite amphitheater photo.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Beau Vallon beach" src="https://commons.wikimedia.org/wiki/Special:FilePath/Beau_Vallon_beach_asv2024-10.jpg?width=1200">
+<div class="pad">
+<h3>4. North — Beau Vallon kitchen villa</h3>
+<p>Best June swimming. ISPC supermarket on the beach road. Anse Major hike starts here.</p>
+<p class="price">Simple apartment/chalet: €150–280/night (10 nights €1,500–2,800)<br>Proper beachfront villa with pool: €500–700/night (10 nights €5,000–7,000)</p>
+<p><a href="https://www.airbnb.com/s/Beau-Vallon--Seychelles/homes">Airbnb Beau Vallon</a><br>
+<a href="https://www.seyvillas.com/en/list/mahe_villa-type">SeyVillas Mahé villas</a></p>
+<p class="note">Plus: easiest swimming, easiest groceries. Minus: town beach, not a hidden cove.</p>
+</div>
+</article>
+</div>
+</section>
+<section>
+<h2>Sample 10 days</h2>
+<p>Works from any of the four houses.</p>
+<ol>
+<li>Land SEZ, SPAR Eden Island shop, drive to the house, swim or pool, early night.</li>
+<li>Recover on the nearest beach. Learn the coastal road only.</li>
+<li>Anse Major hike (starts near Bel Ombre): walk to a hidden beach, picnic, swim, walk back. No boat.</li>
+<li>Copolia morning (granite viewpoint), beach after.</li>
+<li>Morne Blanc early, then Port Launay or Beau Vallon if home beach is sloppy.</li>
+<li>Restock + villa day.</li>
+<li>Anse Intendance / Baie Lazare for pictures. Swim only if that cove is calm.</li>
+<li>Victoria market + Mission Lodge or Jardin du Roi + beach.</li>
+<li>Repeat the favorite hike and a long swim.</li>
+<li>No hike. Airport 30–45 minutes. Slack.</li>
+</ol>
+<p class="note">Leave Israel after Shabbat 12 June 2027, or before Thursday 10 June (Shavuot is Fri 11 June 2027).</p>
+</section>
+<section>
+<h2>Money picture (10 nights, two people)</h2>
+<ul>
+<li>House: €1,400–4,000 for the couple-sized options (or €5,000–7,000 for a fancy Beau Vallon villa)</li>
+<li>Car: €500–800</li>
+<li>Food: €200–400</li>
+<li>Flights TLV–SEZ: often ~$800–1,500 per person depending on routing (Air Seychelles has operated a ~6h20 weekly)</li>
+</ul>
+<p>Total ballpark excluding flights: about €2,200–5,200 for the house+car+food we actually want.</p>
+</section>
+<section>
+<h2>What we still decide</h2>
+<p>Which house: Red Palm, Maison Soleil, Pineapple Beach, Villas de Jardin, or a Beau Vallon villa.</p>
+<p>Once we pick the door, the next document is maps and hike times measured from that house, the SPAR shopping list, and the booking email.</p>
+</section>
+<footer>
+<p>Private trip concept. No password on this page. Do not put passport numbers here.</p>
+</footer>
+</main>
+</body>
+</html>
